@@ -50,10 +50,11 @@ h4 {
 }
 
 header {
-	grid-area: header;
+
 	background: #455A64;
 	color: white;
-	padding: 4rem;
+	padding-top: 4rem;
+  padding-right: 0px;
   width: 100%;
 	text-align: center;
 }
@@ -94,4 +95,56 @@ nav li a:hover:not(.active) {
 
 nav .active {
   background-color: #4CAF50;
+}
+
+/* Home Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+homebutton {
+  font-size: 14px;
+  color: white;
+  background-color: blue;
+  font-weight: 400;
+  border-width: 2px;
+  border-color: #073B4C;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+homebutton:hover {
+  background-color: #118AB2;
+  color: white;
+  cursor: pointer;
+}
+
+box.a {
+  background: #444444;
+  height: 60px;
+  width: 100px;
+  margin: 60px auto;
+
+}
+
+box.b {
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  width: 170px;
+  height: 140px;
+
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+
+  border: 1px solid orange;    
+  background-color: orange; 
+}
+
+.center {
+  margin: auto;
 }
