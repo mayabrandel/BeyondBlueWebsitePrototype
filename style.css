@@ -12,6 +12,7 @@ body {
 
 	font-family: system-ui, sans-serif;
 	font-size: 1.5em;
+  background-color: rgb(255, 188, 143);
 }
 
 /* Typography
@@ -26,7 +27,7 @@ h4 {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 7rem;
 	line-height: 1.2;
 	letter-spacing: -.1rem;
 }
@@ -51,12 +52,34 @@ h4 {
 
 header {
 
-	background: #455A64;
+	background: rgb(6, 38, 92);
 	color: white;
 	padding-top: 4rem;
   padding-right: 0px;
   width: 100%;
 	text-align: center;
+}
+
+smallheaders {
+
+	background: rgb(6, 38, 92);
+	color: white;
+	padding-top: 4rem;
+  padding-right: 0px;
+  width: 100%;
+	text-align: left;
+  padding-left: 30px;
+}
+
+centertext {
+  width: 100%;
+	text-align: center;
+}
+
+paragraph {
+  padding-left: 30px;
+  max-width: 50%;
+  text-align: left;
 }
 
 /* Navigation
@@ -69,7 +92,7 @@ nav ul {
   overflow: hidden;
   width: 100%;
   position: fixed;
-  background-color: #333;
+  background-color: rgb(153, 223, 245);
 }
 
 nav li {
@@ -90,11 +113,11 @@ nav li a {
 }
 
 nav li a:hover:not(.active) {
-  background-color: #111;
+  background-color: rgb(69, 137, 255);
 }
 
 nav .active {
-  background-color: #4CAF50;
+  background-color: rgb(6, 38, 92);
 }
 
 /* Home Buttons
@@ -103,24 +126,26 @@ nav .active {
 homebutton {
   font-size: 14px;
   color: white;
-  background-color: blue;
+  background-color: rgb(6, 38, 92);
   font-weight: 400;
   border-width: 2px;
-  border-color: #073B4C;
+  border-color: #rgb(6, 38, 92);
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
+  border-radius: 12px;
 }
 
 homebutton:hover {
-  background-color: #118AB2;
+  background-color: rgb(153, 223, 245);
   color: white;
   cursor: pointer;
 }
 
 box.a {
-  background: #444444;
+  display: inline-block;
+  background-color: rgb(255, 188, 143);
   height: 60px;
   width: 100px;
   margin: 60px auto;
@@ -145,6 +170,45 @@ box.b {
   background-color: orange; 
 }
 
+box.c {
+  display: inline-block;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  width: 250px;
+  height: 300px;
+
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+
+  
+  border: 20px solid white;    
+  background-color: lightblue; 
+}
+
+orangebutton {
+  font-size: 20px;
+  color: black;
+  background-color: orange;
+  font-weight: 600;
+  border-width: 2px;
+  border-color: orange;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-radius: 5px;
+}
+
+orangebutton:hover {
+  background-color: darkorange;
+  color: black;
+  cursor: pointer;
+}
+
 .center {
   margin: auto;
 }
@@ -153,7 +217,7 @@ box.b {
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
+  padding: 30px;
   box-sizing: border-box;
 }
 
@@ -173,10 +237,54 @@ box.b {
 
 .leftimage {
   float: left;
-  height: 75px;
-  width: 235px;
+  width: 40%;
   font-family: Veranda;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
 }
 .righttext {
   float:right;
+  padding-right: 20px;
+  max-width: 50%;
+}
+
+.rightbutton {
+  float:right;
+  padding-right: 38%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+input {
+  width: 50%;
+}
+
+#image {
+  list-style-image: url(images/orangesquare.jpg);
 }

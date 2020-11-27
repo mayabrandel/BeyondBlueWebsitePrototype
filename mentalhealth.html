@@ -33,13 +33,6 @@
 	<div class="center">
 		<box class="b">About Us<br><br><a href="aboutus.html"><homebutton>Find out more</homebutton></a></li></box>  <box class="b">Mental Health<br><br><a href="aboutus.html"><homebutton>Find out more</homebutton></a></box>  <box class="b">How to help<br><br><a href="aboutus.html"><homebutton>Find out more</homebutton></a></box>
   </div><br>
-
-  <div>
-    <img src="website_art.png" class="leftimage"/>
-    <h3 class="righttext">The Art of Gaming</h3>
-
-  </div><br>
-
   
 
   <div class="row">
@@ -53,12 +46,28 @@
   </div>
   </div>
 
-    
 
-    <h2>Research</h2>
-			<p>This project will be working on designing a website for the not-for-profit organisation Beyond Blue to support and promote their causes online. The design will aim to introduce and provide information efficiently and allow individuals to support and sign up to help further the cause. </p>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
   </body>
 
