@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	display: grid;
 
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.5em;
   background-color: rgb(255, 188, 143);
 }
@@ -175,6 +175,9 @@ homebutton:hover {
   cursor: pointer;
 }
 
+/* Shapes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 box.a {
   display: inline-block;
   background-color: rgb(255, 188, 143);
@@ -306,6 +309,8 @@ orangebutton:hover {
   margin: auto;
 }
 
+/* Section with two columns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .column {
   float: left;
@@ -326,7 +331,8 @@ orangebutton:hover {
   }
 }
 
-
+/* Text and images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .textside {
   float: left;
@@ -383,6 +389,9 @@ orangebutton:hover {
   padding-top: 30px;
   padding-bottom: 0px;
 }
+
+/* Collapsible bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .collapsible {
   background-color: orange;

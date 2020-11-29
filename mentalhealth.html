@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width">
 	<title>repl.it</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,6 +30,7 @@
 		<h1><b>Mental Health</b></h1><p>Find information and resources here</p>
 	</smallheaders>
 
+  <!-- mental health information sections (navigation bar)-->
   <navi>
 		<ul>
 			<li><a>Anxiety and Depression</a></li>
@@ -38,6 +40,7 @@
 		</ul>
 	</navi><br>
 
+  <!-- video and text section -->
   <div class="center" style="background-color: rgb(255, 215, 189);">
     <iframe class="leftimage" width="788" height="443" src="https://www.youtube.com/embed/qg4NVmcQUcI" frameborder="0px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h2 class="righttext"><b>MENTAL HEALTH</b></h2> <h3 class="righttext">Having a positive and balanced mental wellbeing is crucial for leading a happy, healthy life for any individual. Mental health can be explained as being an individual’s wellbeing, their ability to cope with everyday life including the different stresses involved to live a rich, productive life with a positive impact on their community around them.<br>
@@ -47,7 +50,7 @@
   </div><br><br><br>
   
 
-
+<!-- Collapsible information bars -->
 <button type="button" class="collapsible">Who does it affect?</button>
 <div class="content">
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
@@ -68,6 +71,7 @@
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
 </div><br>
 
+<!-- JAVA script for animation of collapsible bars -->
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
