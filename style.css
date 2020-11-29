@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	display: grid;
 
-	font-family: system-ui, sans-serif;
+	font-family: 'Cabin', sans-serif;
 	font-size: 1.5em;
   background-color: rgb(255, 188, 143);
 }
@@ -30,6 +30,7 @@ h1 {
 	font-size: 7rem;
 	line-height: 1.2;
 	letter-spacing: -.1rem;
+  font-family: 'Cabin', sans-serif;
 }
 
 h2 {
@@ -71,6 +72,14 @@ smallheaders {
   padding-left: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  smallheaders {
+    padding: 0px;
+    padding-top: 50px;
+    max-width: 100%;
+  }
+}
+
 aboutusheader {
   
   background: rgb(6, 38, 92);
@@ -105,6 +114,17 @@ nav ul {
   width: 100%;
   position: fixed;
   background-color: rgb(153, 223, 245);
+}
+
+@media screen and (max-width: 600px) {
+  nav ul{
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    border: 0px;
+    float: center;
+    font-size: 1rem;
+  }
 }
 
 nav li {
@@ -164,6 +184,13 @@ box.a {
 
 }
 
+@media screen and (max-width: 600px) {
+  box.a {
+    
+    height: 0px;
+  }
+}
+
 box.b {
   display: inline-block;
   font-size: 24px;
@@ -180,6 +207,16 @@ box.b {
 
   border: 1px solid orange;    
   background-color: orange; 
+}
+
+@media screen and (max-width: 600px) {
+  box.b {
+    width: 100%;
+    max-width: 100%;
+    float: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 box.c {
@@ -201,6 +238,20 @@ box.c {
   background-color: lightblue; 
 }
 
+@media screen and (max-width: 600px) {
+  box.c {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 0px;
+    float: center;
+  }
+}
+
+
+
 circle.b {
   display: inline-block;
   font-size: 24px;
@@ -219,6 +270,16 @@ circle.b {
   border: 1px solid orange;    
   background-color: orange; 
 }
+@media screen and (max-width: 600px) {
+  circle.b {
+    width: 100%;
+    max-width: 100%;
+    float: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 
 orangebutton {
   display: inline-block;
@@ -280,10 +341,30 @@ orangebutton:hover {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .leftimage {
+    width: 100%;
+    float: center;
+    padding: 0px;
+  }
+}
+
 .righttext {
   float:right;
   padding-right: 20px;
+  padding-left: 30px;
   max-width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .righttext {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .rightbutton {
@@ -346,6 +427,14 @@ navi ul {
   overflow: hidden;
   width: 100%;
   background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  navi ul {
+    width: 100%;
+    float: left;
+    font-size: 1rem;
+  }
 }
 
 navi li {
